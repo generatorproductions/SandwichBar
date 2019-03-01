@@ -1,5 +1,5 @@
 /**
- * Write a description of class SandwitchMaker here.
+ * Write a description of class SandwichMaker here.
  *
  * @author (your name)
  * @version (a version number or a date)

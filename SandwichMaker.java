@@ -6,5 +6,5 @@
  */
 public class SandwichMaker
 {
-    private boolean isReady;
+    
 }

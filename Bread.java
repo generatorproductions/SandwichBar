@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Bread here.
  *
@@ -8,5 +7,4 @@
 abstract public class Bread extends SandwichParts
 {
     abstract public void add();
-    
 }

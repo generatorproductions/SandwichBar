@@ -5,10 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class SandwitchParts
+abstract public class SandwitchParts
 {
-    public int yuh(int skrrt)
-    {
-        return skrrt;
-    }
+    abstract public void add();
 }

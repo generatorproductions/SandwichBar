@@ -5,11 +5,8 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Bread extends SandwitchParts
+abstract public class Bread extends SandwitchParts
 {
-
-    public void add()
-    {
+    abstract public void add();
     
-    }
 }

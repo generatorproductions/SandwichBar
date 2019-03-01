@@ -6,8 +6,5 @@
  */
 public class Customer
 {
-    public void response()
-    {
-        System.out.println("Is this the Krusty Krab?");
-    }
+    
 }

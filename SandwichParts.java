@@ -6,5 +6,5 @@
  */
 abstract public class SandwichParts
 {
-    abstract public void add();
+    abstract public String noise(); // Returns the noise of constructing the part
 }

@@ -12,6 +12,22 @@ public class SandwichMaker
     {
         SandwichList SLO = new SandwichList();
         CustomerList CLO = new CustomerList();
+        Customer c1 = new EasyCustomer();
+        System.out.println(c1.getName());
+        Customer c2 = new MidCustomer();
+        System.out.println(c2.getName());
+        Customer c3 = new DifficultCustomer();
+        System.out.println(c3.getName());
         
+        
+    }
+    
+    public void run()
+    {
+        boolean on = true;
+        while(on == true)
+        {
+            
+        }
     }
 }

@@ -6,5 +6,10 @@
  */
 public class Sandwich
 {
+    public Sandwich(SandwichParts p1, SandwichParts p2, SandwichParts p3)
+    {
+        
+    }
+    
     
 }

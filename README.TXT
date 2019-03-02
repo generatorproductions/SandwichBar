@@ -1,12 +1,8 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+
+PROJECT TITLE: SandwichBar
+PURPOSE OF PROJECT: School Project
+VERSION or DATE: 3/1/2019
+HOW TO START THIS PROJECT: Run that bad boi
+AUTHORS: Babuntska, Frogs65, JRud25
+USER INSTRUCTIONS: This is a console based program

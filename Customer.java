@@ -6,9 +6,9 @@
  */
 public interface Customer
 {
-    String[][] names = {{"Cole", "Gage", "Myla", "Kevin", "Sonny","Granny"},/* Easy */
-                        {"Mr. Gibbs", "Angelo", "Hunter", "Jordan","Mrs. Puff", "Guy Fieri's Wife", "Perch Perkins", "MatPat"},/* Mid */
-                        {"Mr. Klug", "Mr. Faix", "Jablinski", "Mr. Joyce", "Bubble Bass", "Gene Scallop","Mrs. Obama", "Madame Hagfish"}};/* Difficult */
+    String[][] names = {{"Cole", "Gage", "Myla", "Kevin", "Sonny","Granny", "Officer Parish", "Gilbert 'Ratio' Reyes", "Paul Blart"},/* Easy */
+                        {"Mr. Gibbs", "Angelo", "Hunter", "Jordan", "Mrs. Puff", "Guy Fieri", "Perch Perkins", "MatPat", "MC Steve"},/* Mid */
+                        {"Mr. Klug", "Mr. Faix", "Jablinski", "Mr. Joyce", "Bubble Bass", "Gene Scallop", "Mrs. Obama", "Tori Christiansen"}};/* Difficult */
     public String response();
     public int rate();
     public Sandwich order();

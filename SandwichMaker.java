@@ -7,18 +7,19 @@
 public class SandwichMaker
 {
     public static ConsoleClear cc = new ConsoleClear();
+    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "R'p Gn'rat'or"};
     
     public static void main(String [] args)
     {
-        Menu m = new Menu();
+        Menu m = new Menu("h");
         SandwichList SLO = new SandwichList();
         CustomerList CLO = new CustomerList();
-        Customer c1 = new EasyCustomer();
-        System.out.println(c1.getName());
-        Customer c2 = new MidCustomer();
-        System.out.println(c2.getName());
-        Customer c3 = new DifficultCustomer();
-        System.out.println(c3.getName());
+        
+        
+        
+        System.out.println("Welcome to the "+ RES_NAMES[(int)(Math.random() * RES_NAMES.length)] +"!");
+        System.out.println("Please memorize our menu. When you're ready type anything and press enter.");
+        
         m.printMenu();
         
         
@@ -26,10 +27,6 @@ public class SandwichMaker
     
     public void run()
     {
-        boolean on = true;
-        while(on == true)
-        {
-            
-        }
+        
     }
 }

@@ -9,6 +9,6 @@ public class Cucumber extends Veggie
 {
     public String noise()
     {
-        return "Plop";
+        return "Blub";
     }
 }

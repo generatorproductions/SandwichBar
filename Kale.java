@@ -9,6 +9,6 @@ public class Kale extends Veggie
 {
     public String noise()
     {
-        return "Plop";
+        return "Flop";
     }
 }

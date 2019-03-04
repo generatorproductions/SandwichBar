@@ -10,6 +10,7 @@ public class SandwichMaker
     
     public static void main(String [] args)
     {
+        Menu m = new Menu();
         SandwichList SLO = new SandwichList();
         CustomerList CLO = new CustomerList();
         Customer c1 = new EasyCustomer();
@@ -18,6 +19,7 @@ public class SandwichMaker
         System.out.println(c2.getName());
         Customer c3 = new DifficultCustomer();
         System.out.println(c3.getName());
+        m.printMenu();
         
         
     }

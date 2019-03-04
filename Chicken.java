@@ -8,6 +8,6 @@ public class Chicken extends Protein
 {
     public String noise()
     {
-        return "Plop";
+        return "Thud";
     }
 }

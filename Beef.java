@@ -8,6 +8,6 @@ public class Beef extends Protein
 {
     public String noise()
     {
-        return "Plop";
+        return "Thunk";
     }
 }

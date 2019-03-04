@@ -8,6 +8,6 @@ public class Turkey extends Protein
 {
     public String noise()
     {
-        return "Plop";
+        return "Splat";
     }
 }

@@ -9,7 +9,7 @@ import java.util.*;
 public class SandwichMaker
 {
     public static ConsoleClear cc = new ConsoleClear();
-    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "Rap Genny"};
+    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples"};
     private static Scanner s = new Scanner(System.in);
     public static void main(String [] args)
     {
@@ -31,10 +31,12 @@ public class SandwichMaker
         
         
         
-        System.out.println("Welcome to the "+ RES_NAMES[(int)(Math.random() * RES_NAMES.length)] +"!");
-        System.out.println("Please memorize our menu. When you're ready type anything and press enter.");
+        System.out.println("Welcome to the "+ RES_NAMES[(int)(Math.random() * RES_NAMES.length)] +" new hire!");
+        System.out.println("Please memorize the menu before the customers arrive.");
         
         m.printMenu();
+        
+        System.out.println("When you're ready type anything and press enter.");
         
         
     }

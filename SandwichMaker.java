@@ -4,14 +4,28 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.*;
+
 public class SandwichMaker
 {
     public static ConsoleClear cc = new ConsoleClear();
-    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "R'p Gn'rat'or"};
-    
+    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "Rap Genny"};
+    private static Scanner s = new Scanner(System.in);
     public static void main(String [] args)
     {
-        Menu m = new Menu("h");
+        System.out.println("What difficulty do you want to play on?(easy/hard)");
+        String diff = "";
+        if(s.next().indexOf("h") != -1)
+        {
+            diff = "h";
+        }
+        else
+        {
+            diff = "e";
+        }
+        
+        
+        Menu m = new Menu(diff);
         SandwichList SLO = new SandwichList();
         CustomerList CLO = new CustomerList();
         

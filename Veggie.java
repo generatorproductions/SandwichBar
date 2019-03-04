@@ -7,5 +7,5 @@
  */
 abstract public class Veggie extends SandwichParts
 {
-    abstract public void add();
+    
 }

@@ -5,7 +5,10 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-abstract public class Cucumber extends Veggie
+public class Cucumber extends Veggie
 {
-    
+    public String noise()
+    {
+        return "Plop";
+    }
 }

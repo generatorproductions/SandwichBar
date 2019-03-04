@@ -9,6 +9,6 @@ public class Lettuce extends Veggie
 {
     public String noise()
     {
-        return "Plop";
+        return "Crunch";
     }
 }

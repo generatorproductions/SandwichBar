@@ -1,13 +1,13 @@
 /**
- * Write a description of class SlicedWhite here.
+ * Write a description of class Mustard here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class SlicedWhite extends Sliced
+public class Mustard extends Sauce
 {
     public String noise()
     {
-        return "Schwhip";
+        return "Thud";
     }
 }

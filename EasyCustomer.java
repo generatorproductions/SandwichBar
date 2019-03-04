@@ -10,7 +10,7 @@ public class EasyCustomer implements Customer
     private String name = "Name";
     public EasyCustomer()
     {
-        name = names[0][(int)(Math.random() * names.length)];
+        name = names[0][(int)(Math.random() * names[0].length)];
     }
     public String response()
     {

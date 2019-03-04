@@ -7,7 +7,7 @@
 public interface Customer
 {
     String[][] names = {{"Cole", "Gage", "Myla", "Kevin", "Sonny","Granny"},/* Easy */
-                        {"Mr. Gibbs", "Angelo", "Hunter", "Jordan","Mrs.Puff", "Guy Fieri's Wife"},/* Mid */
+                        {"Mr. Gibbs", "Angelo", "Hunter", "Jordan","Mrs. Puff", "Guy Fieri's Wife", "Perch Perkins", "MatPat"},/* Mid */
                         {"Mr. Klug", "Mr. Faix", "Jablinski", "Mr. Joyce", "Bubble Bass", "Gene Scallop","Mrs. Obama", "Madame Hagfish"}};/* Difficult */
     public String response();
     public int rate();

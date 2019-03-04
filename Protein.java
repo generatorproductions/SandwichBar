@@ -7,5 +7,5 @@
  */
 abstract public class Protein extends SandwichParts
 {
-    abstract public void add();
+    
 }

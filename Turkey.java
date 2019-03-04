@@ -4,7 +4,10 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-abstract public class Turkey extends Protein
+public class Turkey extends Protein
 {
-    
+    public String noise()
+    {
+        return "Plop";
+    }
 }

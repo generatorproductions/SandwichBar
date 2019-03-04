@@ -8,6 +8,6 @@ public class HotSauce extends Sauce
 {
     public String noise()
     {
-        return "";
+        return "Sizzle";
     }
 }

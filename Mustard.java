@@ -8,6 +8,6 @@ public class Mustard extends Sauce
 {
     public String noise()
     {
-        return "Thud";
+        return "Squirt";
     }
 }

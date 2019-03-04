@@ -8,6 +8,6 @@ public class Mayonnaise extends Sauce
 {
     public String noise()
     {
-        return "Thud";
+        return "Mayonnaise";
     }
 }

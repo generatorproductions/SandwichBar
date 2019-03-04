@@ -15,15 +15,26 @@ public class SandwichMaker
     {
         System.out.println("What difficulty do you want to play on?(easy/hard)");
         String diff = "";
-        if(s.next().indexOf("h") != -1)
+        while(diff.equals(""))
         {
-            diff = "h";
-        }
-        else
-        {
-            diff = "e";
+            String response = s.next();
+            if(response.indexOf("h") != -1)
+            {
+                diff = "h";
+            }
+            else if(response.indexOf("e") != -1)
+            {
+                diff = "e";
+            }
+            else
+            {
+                System.out.println("Didn't quite get that(e/h)");
+            }
         }
         
+        try{
+            cc.clear();
+        }catch(Exception e){}
         
         Menu m = new Menu(diff);
         SandwichList SLO = new SandwichList();

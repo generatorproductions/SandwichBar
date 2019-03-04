@@ -1,11 +1,11 @@
 
 /**
- * Write a description of class PlaneBagel here.
+ * Write a description of class PlainBagel here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class PlaneBagel extends Bagel
+public class PlainBagel extends Bagel
 {
     public String noise()
     {

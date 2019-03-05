@@ -10,4 +10,8 @@ public class Turkey extends Protein
     {
         return "Splat";
     }
+    public int getCalories()
+    {
+        return 54;
+    }
 }

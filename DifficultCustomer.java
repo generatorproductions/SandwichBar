@@ -16,14 +16,6 @@ public class DifficultCustomer implements Customer
     {
         return "";
     }
-    public int rate()
-    {
-        return 0;
-    }
-    public Sandwich order()
-    {
-        return null;
-    }
     public String getName()
     {
         return name;

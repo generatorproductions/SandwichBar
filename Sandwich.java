@@ -4,6 +4,8 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import SandyParts.*;
+
 public class Sandwich
 {
     SandwichParts g, p, s1, s2, v1, v2;

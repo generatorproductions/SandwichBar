@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Pepper here.
  *
@@ -10,5 +9,10 @@ public class Pepper extends Veggie
     public String noise()
     {
         return "Pop";
+    }
+    
+    public int getCalories()
+    {
+        return 8;
     }
 }

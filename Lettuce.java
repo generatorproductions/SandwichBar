@@ -10,4 +10,9 @@ public class Lettuce extends Veggie
     {
         return "Crunch";
     }
+    
+    public int getCalories()
+    {
+        return 2;
+    }
 }

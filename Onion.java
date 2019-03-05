@@ -10,4 +10,9 @@ public class Onion extends Veggie
     {
         return "Flop";
     }
+    
+    public int getCalories()
+    {
+        return 9;
+    }
 }

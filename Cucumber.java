@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Cucumber here.
  *
@@ -10,5 +9,10 @@ public class Cucumber extends Veggie
     public String noise()
     {
         return "Blub";
+    }
+    
+    public int getCalories()
+    {
+        return 3;
     }
 }

@@ -13,22 +13,22 @@ public class SandwichMaker
     private static Scanner s = new Scanner(System.in);
     public static void main(String [] args)
     {
-        System.out.println("What difficulty do you want to play on?(easy/hard)");
+        System.out.println("What difficulty do you want to play on? (easy/hard)");
         String diff = "";
         while(diff.equals(""))
         {
             String response = s.next();
-            if(response.indexOf("h") != -1)
+            if(response.indexOf("h") != -1 ||response.indexOf("H") != -1)
             {
                 diff = "h";
             }
-            else if(response.indexOf("e") != -1)
+            else if(response.indexOf("e") != -1 || response.indexOf("E") != -1)
             {
                 diff = "e";
             }
             else
             {
-                System.out.println("Didn't quite get that(e/h)");
+                System.out.println("Didn't quite get that (e/h)");
             }
         }
         

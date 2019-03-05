@@ -10,4 +10,9 @@ public class Mayonnaise extends Sauce
     {
         return "Sploosh";
     }
+    
+    public int getCalories()
+    {
+        return 94;
+    }
 }

@@ -11,4 +11,9 @@ public class Hummus extends Sauce
     {
         return "Yee-Haw";
     }
+    
+    public int getCalories()
+    {
+        return 25;
+    }
 }

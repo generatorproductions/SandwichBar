@@ -10,4 +10,9 @@ public class HotSauce extends Sauce
     {
         return "Sizzle";
     }
+    
+    public int getCalories()
+    {
+        return 0;
+    }
 }

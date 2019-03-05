@@ -10,4 +10,9 @@ public class EverythingBagel extends Bagel
     {
         return "Razzel";
     }
+    
+    public int getCalories()
+    {
+        return 290;
+    }
 }

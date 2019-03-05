@@ -49,6 +49,17 @@ public class SandwichMaker
         
         System.out.println("When you're ready type anything and press enter.");
         
+        Grain g = new EverythingBagel();
+        Protein p = new Chicken();
+        Sauce s = new Hummus();
+        Veggie v = new Pepper();
+        Veggie l = new Lettuce();
+        
+        Sandwich sand1 = new Sandwich(g, p, s, v);
+        Sandwich sand2 = new Sandwich(g, p, s, l);
+        
+        System.out.println(sand1.compare(sand1, sand2));
+       
         
     }
     

@@ -11,4 +11,8 @@ public class SlicedGrain extends Sliced
     {
         return "Schwhap";
     }
+    public int getCalories()
+    {
+        return 69;
+    }
 }

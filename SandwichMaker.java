@@ -60,6 +60,7 @@ public class SandwichMaker
         
         System.out.println(sand1.compare(sand1, sand2));
         System.out.println(sand1.addCalories());
+        System.out.println(p.getTotalParts());
         
     }
     

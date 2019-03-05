@@ -10,4 +10,8 @@ public class RegularBun extends Bun
     {
         return "Plop";
     }
+    public int getCalories()
+    {
+        return 84;
+    }
 }

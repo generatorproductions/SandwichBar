@@ -10,4 +10,8 @@ public class SeededBun extends Bun
     {
         return "Tatter";
     }
+    public int getCalories()
+    {
+        return 120;
+    }
 }

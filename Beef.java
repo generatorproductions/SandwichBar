@@ -10,4 +10,8 @@ public class Beef extends Protein
     {
         return "Thunk";
     }
+    public int getCalories()
+    {
+        return 213;
+    }
 }

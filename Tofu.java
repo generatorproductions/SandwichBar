@@ -11,4 +11,8 @@ public class Tofu extends Protein
     {
         return "Clap";
     }
+    public int getCalories()
+    {
+        return 94;
+    }
 }

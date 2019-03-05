@@ -10,4 +10,8 @@ public class Chicken extends Protein
     {
         return "Thud";
     }
+    public int getCalories()
+    {
+        return 335;
+    }
 }

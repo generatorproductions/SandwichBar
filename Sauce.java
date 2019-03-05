@@ -6,5 +6,5 @@
  */
 abstract public class Sauce extends SandwichParts
 {
-    
+    abstract public int getCalories();
 }

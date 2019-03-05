@@ -6,5 +6,5 @@
  */
 abstract public class Veggie extends SandwichParts
 {
-    
+    abstract public int getCalories();
 }

@@ -6,5 +6,5 @@
  */
 abstract public class Grain extends SandwichParts
 {
-    
+    abstract public int getCalories();
 }

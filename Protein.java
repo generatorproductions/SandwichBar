@@ -6,5 +6,5 @@
  */
 abstract public class Protein extends SandwichParts
 {
-    
+    abstract public int getCalories();
 }

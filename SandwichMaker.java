@@ -59,7 +59,7 @@ public class SandwichMaker
         Sandwich sand2 = new Sandwich(g, p, s, l);
         
         System.out.println(sand1.compare(sand1, sand2));
-       
+        System.out.println(sand1.addCalories());
         
     }
     

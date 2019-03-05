@@ -10,9 +10,9 @@ import java.util.*;
 public class Menu
 {
     
-    private String[] easyOptions = {"Rb", "Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "Ka", "Be", "Tk", "Ci", "Md", "Ma", "Hs"};
-    private String[] hardOptions = {"Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "Ka", "Be", "Tk", "Ci", "Md", "Ma", "Hs", "Rb"};
-    private String[] parts = {"RegularBun","SeededBun","SlicedGrain","SlicedWhite","PlainBagel","EverythingBagel","Lettuce","Cucumber","Kale","Beef","Turkey", "Chicken", "Mustard", "Mayo", "Hot Sause"};
+    private String[] easyOptions = {"Rb", "Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "On", "Be", "Tk", "Ci", "Md", "Ma", "Hs"};
+    private String[] hardOptions = {"Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "On", "Be", "Tk", "Ci", "Md", "Ma", "Hs", "Rb"};
+    private String[] parts = {"RegularBun","SeededBun","SlicedGrain","SlicedWhite","PlainBagel","EverythingBagel","Lettuce","Cucumber","Onion","Beef","Turkey", "Chicken", "Mustard", "Mayo", "Hot Sause"};
     private String menuString = "";
     public Menu(String diff)
     {

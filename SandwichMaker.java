@@ -18,17 +18,17 @@ public class SandwichMaker
         while(diff.equals(""))
         {
             String response = s.next();
-            if(response.indexOf("h") != -1 ||response.indexOf("H") != -1)
+            if(response.equalsIgnoreCase("hard"))
             {
                 diff = "h";
             }
-            else if(response.indexOf("e") != -1 || response.indexOf("E") != -1)
+            else if(response.equalsIgnoreCase("easy"))
             {
                 diff = "e";
             }
             else
             {
-                System.out.println("Didn't quite get that (e/h)");
+                System.out.println("Didn't quite get that. (easy/hard)");
             }
         }
         

@@ -18,7 +18,7 @@ public class Menu
     {
         
         int i = 0;
-        if(diff.equals("e"))
+        if(diff.equals("e") || diff.equalsIgnoreCase("easy"))
         {
             menuString += "\n";
             for(String s : easyOptions)
@@ -32,7 +32,7 @@ public class Menu
             }
             menuString += "\n";
         }
-        else if(diff.equals("h"))
+        else if(diff.equals("h") || diff.equalsIgnoreCase("hard"))
         {
             menuString += "\n";
             for(String s : hardOptions)

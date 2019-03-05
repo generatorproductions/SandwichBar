@@ -55,9 +55,9 @@ public class Sandwich
             return false;
     }
     
-    public int addCalories(int total)
+    public int addCalories()
     {
-        total = g.getCalories() + p.getCalories() + s1.getCalories() + s2.getCalories() + v1.getCalories() + v2.getCalories();
+        int total = g.getCalories() + p.getCalories() + s1.getCalories() + s2.getCalories() + v1.getCalories() + v2.getCalories();
         return total;
     }
     

@@ -18,4 +18,10 @@ public class Hummus extends Sauce
     {
         return 25;
     }
+    
+    public String toString()
+    {
+        return "Hummus";
+    }
+    
 }

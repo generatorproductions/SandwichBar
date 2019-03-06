@@ -17,4 +17,8 @@ public class SlicedGrain extends Sliced
     {
         return 69;
     }
+    public String toString()
+    {
+        return "Sliced Grain Bread";
+    }
 }

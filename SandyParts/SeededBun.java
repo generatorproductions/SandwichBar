@@ -16,4 +16,8 @@ public class SeededBun extends Bun
     {
         return 120;
     }
+    public String toString()
+    {
+        return "Seeded Bun";
+    }
 }

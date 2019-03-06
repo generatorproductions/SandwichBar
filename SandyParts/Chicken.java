@@ -16,4 +16,9 @@ public class Chicken extends Protein
     {
         return 335;
     }
+    
+    public String toString()
+    {
+        return "Chicken";
+    }
 }

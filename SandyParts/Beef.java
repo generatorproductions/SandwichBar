@@ -16,4 +16,8 @@ public class Beef extends Protein
     {
         return 213;
     }
+    public String toString()
+    {
+        return "Beef";
+    }
 }

@@ -16,4 +16,9 @@ public class Turkey extends Protein
     {
         return 54;
     }
+    
+    public String toString()
+    {
+        return "turkey";
+    }
 }

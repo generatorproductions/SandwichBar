@@ -17,4 +17,9 @@ public class HotSauce extends Sauce
     {
         return 0;
     }
+    
+    public String toString()
+    {
+        return "Hot Sauce";
+    }
 }

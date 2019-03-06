@@ -16,4 +16,8 @@ public class RegularBun extends Bun
     {
         return 84;
     }
+    public String toString()
+    {
+        return "Regular Bun";
+    }
 }

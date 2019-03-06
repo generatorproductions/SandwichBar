@@ -17,4 +17,8 @@ public class Tofu extends Protein
     {
         return 94;
     }
+    public String toString()
+    {
+        return "Tofu";
+    }
 }

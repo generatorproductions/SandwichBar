@@ -17,4 +17,9 @@ public class Mayonnaise extends Sauce
     {
         return 94;
     }
+    
+    public String toString()
+    {
+        return "Mayonnaise";
+    }
 }

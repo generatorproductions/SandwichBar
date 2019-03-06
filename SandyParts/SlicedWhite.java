@@ -16,4 +16,8 @@ public class SlicedWhite extends Sliced
     {
         return 79;
     }
+    public String toString()
+    {
+        return "Sliced White Bread";
+    }
 }

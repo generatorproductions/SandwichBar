@@ -37,9 +37,6 @@ public class SandwichMaker
         }catch(Exception e){}
         
         Menu m = new Menu(diff);
-        SandwichList SLO = new SandwichList();
-        CustomerList CLO = new CustomerList();
-        
         
         
         System.out.println("Welcome to the "+ RES_NAMES[(int)(Math.random() * RES_NAMES.length)] +" new hire!");

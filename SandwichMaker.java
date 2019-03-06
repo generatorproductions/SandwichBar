@@ -8,6 +8,7 @@ import java.util.*;
 import SandyParts.*;
 public class SandwichMaker
 {
+    public ArrayList<SandwichParts> parts = new ArrayList<SandwichParts>();
     public static ConsoleClear cc = new ConsoleClear();
     public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples"};
     private static Scanner s = new Scanner(System.in);

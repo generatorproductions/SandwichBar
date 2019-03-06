@@ -8,10 +8,10 @@ import java.util.*;
 import SandyParts.*;
 public class SandwichMaker
 {
-    public static ArrayList<SandwichParts> grain = new ArrayList<SandwichParts>();
-    public static ArrayList<SandwichParts> veggie = new ArrayList<SandwichParts>();
-    public static ArrayList<SandwichParts> protein = new ArrayList<SandwichParts>();
-    public static ArrayList<SandwichParts> sauce = new ArrayList<SandwichParts>();
+    public static ArrayList<Grain> grain = new ArrayList<Grain>();
+    public static ArrayList<Veggie> veggie = new ArrayList<Veggie>();
+    public static ArrayList<Protein> protein = new ArrayList<Protein>();
+    public static ArrayList<Sauce> sauce = new ArrayList<Sauce>();
     public static ConsoleClear cc = new ConsoleClear();
     public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples"};
     private static Scanner s = new Scanner(System.in);
@@ -50,6 +50,9 @@ public class SandwichMaker
         m.printMenu();
         
         System.out.println("When you're ready type anything and press enter.");
+        s.next();
+        
+        
         /*
         Sandwich sand1 = new Sandwich(g, p, s, v);
         Sandwich sand2 = new Sandwich(g, p, s, l);
@@ -85,4 +88,40 @@ public class SandwichMaker
         protein.add(new Tofu());
         protein.add(new Beef());
     }
+    
+    public static Sandwich createEasySandy()
+    {
+        Grain g = grain.get((int)(Math.random() * grain.size()));
+        Veggie v = veggie.get((int)(Math.random() * veggie.size()));
+        Protein p = protein.get((int)(Math.random() * protein.size()));
+        Sauce s = sauce.get((int)(Math.random() * sauce.size()));
+        Sandwich sandy = new Sandwich(g, p, s, v);
+        return sandy;
+    }
+    public static Sandwich createMidSandy()
+    {
+        Grain g = grain.get((int)(Math.random() * grain.size()));
+        Veggie v = veggie.get((int)(Math.random() * veggie.size()));
+        Veggie v2 = veggie.get((int)(Math.random() * veggie.size()));
+        Protein p = protein.get((int)(Math.random() * protein.size()));
+        Sauce s = sauce.get((int)(Math.random() * sauce.size()));
+        Sandwich sandy = new Sandwich(g, p, s, v, v2);
+        return sandy;
+    }
+    public static Sandwich createDiffSandy()
+    {
+        Grain g = grain.get((int)(Math.random() * grain.size()));
+        Veggie v = veggie.get((int)(Math.random() * veggie.size()));
+        Veggie v2 = veggie.get((int)(Math.random() * veggie.size()));
+        Protein p = protein.get((int)(Math.random() * protein.size()));
+        Sauce s = sauce.get((int)(Math.random() * sauce.size()));
+        Sauce s1 = sauce.get((int)(Math.random() * sauce.size()));
+        Sandwich sandy = new Sandwich(g, p, s, s1, v, v2);
+        return sandy;
+    }
+    
+    
+    
+    
+    
 }

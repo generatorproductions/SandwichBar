@@ -109,6 +109,10 @@ public class SandwichMaker
         Grain g = grain.get((int)(Math.random() * grain.size()));
         Veggie v = veggie.get((int)(Math.random() * veggie.size()));
         Veggie v2 = veggie.get((int)(Math.random() * veggie.size()));
+        while(v == v2)
+        {
+            v2 = veggie.get((int)(Math.random() * veggie.size()));
+        }
         Protein p = protein.get((int)(Math.random() * protein.size()));
         Sauce s = sauce.get((int)(Math.random() * sauce.size()));
         Sandwich sandy = new Sandwich(g, p, s, v, v2);
@@ -120,9 +124,17 @@ public class SandwichMaker
         Grain g = grain.get((int)(Math.random() * grain.size()));
         Veggie v = veggie.get((int)(Math.random() * veggie.size()));
         Veggie v2 = veggie.get((int)(Math.random() * veggie.size()));
+        while(v == v2)
+        {
+            v2 = veggie.get((int)(Math.random() * veggie.size()));
+        }
         Protein p = protein.get((int)(Math.random() * protein.size()));
         Sauce s = sauce.get((int)(Math.random() * sauce.size()));
         Sauce s1 = sauce.get((int)(Math.random() * sauce.size()));
+        while(s == s1)
+        {
+            s1 = sauce.get((int)(Math.random() * sauce.size()));
+        }
         Sandwich sandy = new Sandwich(g, p, s, s1, v, v2);
         return sandy;
     }

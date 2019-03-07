@@ -67,8 +67,6 @@ public class SandwichMaker
         System.out.println(sand1.addCalories());
         System.out.println(p.getTotalParts());
         */
-       
-       
     }
     
     public static void arrayListMakers()
@@ -105,6 +103,7 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, v);
         return sandy;
     }
+    
     public static Sandwich createMidSandy()
     {
         Grain g = grain.get((int)(Math.random() * grain.size()));
@@ -115,6 +114,7 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, v, v2);
         return sandy;
     }
+    
     public static Sandwich createDiffSandy()
     {
         Grain g = grain.get((int)(Math.random() * grain.size()));
@@ -126,9 +126,4 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, s1, v, v2);
         return sandy;
     }
-    
-    
-    
-    
-    
 }

@@ -11,8 +11,6 @@ public class Sandwich
     SandwichParts g, p, s1, s2, v1, v2;
     private static int sandwichMade = 0;
     
-    
-    
     public Sandwich(Grain p1, Protein p2, Sauce p3, Sauce p4, Veggie p5, Veggie p6)
     {
         g = p1;
@@ -77,6 +75,7 @@ public class Sandwich
     {
         return sandwichMade;
     }
+    
     public void resetTotalMade()
     {
         sandwichMade = 0;
@@ -94,6 +93,4 @@ public class Sandwich
             result += "and " + s1;
         return result;
     }
-    
-    
 }

@@ -20,7 +20,5 @@ public class SandwichList
         {
             System.out.println("Menu is full!");
         }
-        
-        
     }
 }

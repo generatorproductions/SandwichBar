@@ -15,6 +15,7 @@ public interface Customer
     String [][] badResponses = {{"...", "Mayonnaise", "Reeee", "[INSERT RESPONSE]", "Eww", "Do better next time kiddo", "Good try", "", "I shouldn't have left my stoop for this", "*Unenthusiastic high-five*"}, 
                                 {"[INSERT RESPONSE]", "I don't like sandwiches anyway", "Nah that ain't for me", "That ain't it chief", "", "No dawg", ""},
                                 {"The person who made this is nucking futs", "[INSERT RESPONSE]", "", "[INSERT RESPONSE]", "You forgot the pickles", "*Walks out the door*", ""}};
-    public String response();
+    public String goodResponse();
+    public String badResponse();
     public String getName();
 }

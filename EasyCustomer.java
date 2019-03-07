@@ -8,13 +8,18 @@
 public class EasyCustomer implements Customer
 {
     private String name = "Name";
+    private int index = (int)(Math.random() * names[1].length);
     public EasyCustomer()
     {
-        name = names[0][(int)(Math.random() * names[0].length)];
+        name = names[0][index];
     }
-    public String response()
+    public String goodResponse()
     {
-        return "";
+        return goodResponses[0][index];
+    }
+    public String badResponse()
+    {
+        return badResponses[0][index];
     }
     public String getName()
     {

@@ -8,13 +8,18 @@
 public class DifficultCustomer implements Customer
 {
     private String name = "Name";
+    private int index = (int)(Math.random() * names[1].length);
     public DifficultCustomer()
     {
-        name = names[2][(int)(Math.random() * names[2].length)];
+        name = names[2][index];
     }
-    public String response()
+    public String goodResponse()
     {
-        return "";
+        return goodResponses[2][index];
+    }
+    public String badResponse()
+    {
+        return badResponses[2][index];
     }
     public String getName()
     {

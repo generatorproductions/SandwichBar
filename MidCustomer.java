@@ -8,15 +8,19 @@
 public class MidCustomer implements Customer
 {
     private String name = "Name";
+    private int index = (int)(Math.random() * names[1].length);
     public MidCustomer()
     {
-        name = names[1][(int)(Math.random() * names[1].length)];
+        name = names[1][index];
     }
-    public String response()
+    public String goodResponse()
     {
-        return "";
+        return goodResponses[1][index];
     }
-    
+    public String badResponse()
+    {
+        return badResponses[1][index];
+    }
     public String getName()
     {
         return name;

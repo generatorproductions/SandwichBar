@@ -51,6 +51,9 @@ public class SandwichMaker
         
         System.out.println("When you're ready, type anything and press enter.");
         s.next();
+        try{
+            cc.clear();
+        }catch(Exception e){}
         Customer easyC = new EasyCustomer();
         Customer midC = new MidCustomer();
         Customer diffC = new DifficultCustomer();

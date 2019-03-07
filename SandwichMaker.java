@@ -57,9 +57,9 @@ public class SandwichMaker
         Customer easyC = new EasyCustomer();
         Customer midC = new MidCustomer();
         Customer diffC = new DifficultCustomer();
-        System.out.println(easyC.getName() + ": can I get a " + createEasySandy());
-        System.out.println(midC.getName() + ": can I get a " +createMidSandy());
-        System.out.println(diffC.getName() + ": can I get a " +createDiffSandy());
+        System.out.println(easyC.getName() + ": I'd like a " + createEasySandy() + ".");
+        System.out.println(midC.getName() + ": I'd like a " +createMidSandy() + ".");
+        System.out.println(diffC.getName() + ": I'd like a " +createDiffSandy() + ".");
         /*
         Sandwich sand1 = new Sandwich(g, p, s, v);
         Sandwich sand2 = new Sandwich(g, p, s, l);

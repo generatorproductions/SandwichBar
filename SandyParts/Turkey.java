@@ -12,6 +12,7 @@ public class Turkey extends Protein
     {
         return "Splat";
     }
+    
     public int getCalories()
     {
         return 54;
@@ -19,6 +20,6 @@ public class Turkey extends Protein
     
     public String toString()
     {
-        return "turkey";
+        return "Turkey";
     }
 }

@@ -1,6 +1,5 @@
 package SandyParts;
 
-
 /**
  * Write a description of class Hummus here.
  *
@@ -11,7 +10,7 @@ public class Hummus extends Sauce
 {
     public String noise()
     {
-        return "Yee-Haw";
+        return "Shlup";
     }
     
     public int getCalories()
@@ -23,5 +22,4 @@ public class Hummus extends Sauce
     {
         return "Hummus";
     }
-    
 }

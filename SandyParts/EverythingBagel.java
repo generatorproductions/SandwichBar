@@ -17,6 +17,7 @@ public class EverythingBagel extends Bagel
     {
         return 290;
     }
+    
     public String toString()
     {
         return "Everything Bagel";

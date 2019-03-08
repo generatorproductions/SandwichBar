@@ -17,6 +17,7 @@ public class Cucumber extends Veggie
     {
         return 3;
     }
+    
     public String toString()
     {
         return "Cucumber";

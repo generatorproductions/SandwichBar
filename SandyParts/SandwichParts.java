@@ -20,12 +20,9 @@ abstract public class SandwichParts
     }
     
     abstract public String noise(); // Returns the noise of constructing the part
-     // Returns the calorie count of the food 
+    // Returns the calorie count of the food 
     public int getCalories()
     {
         return 0;
     }
-   
-    
-    
 }

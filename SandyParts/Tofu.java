@@ -11,12 +11,14 @@ public class Tofu extends Protein
 {
     public String noise()
     {
-        return "Clap";
+        return "Glop";
     }
+    
     public int getCalories()
     {
         return 94;
     }
+    
     public String toString()
     {
         return "Tofu";

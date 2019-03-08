@@ -12,10 +12,12 @@ public class SlicedWhite extends Sliced
     {
         return "Schwhip";
     }
+    
     public int getCalories()
     {
         return 79;
     }
+    
     public String toString()
     {
         return "Sliced White Bread";

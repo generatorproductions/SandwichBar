@@ -17,6 +17,7 @@ public class PlainBagel extends Bagel
     {
         return 280;
     }
+    
     public String toString()
     {
         return "Plain Bagel";

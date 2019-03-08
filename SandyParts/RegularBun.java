@@ -12,10 +12,12 @@ public class RegularBun extends Bun
     {
         return "Plop";
     }
+    
     public int getCalories()
     {
         return 84;
     }
+    
     public String toString()
     {
         return "Regular Bun";

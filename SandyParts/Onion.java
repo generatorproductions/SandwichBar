@@ -17,6 +17,7 @@ public class Onion extends Veggie
     {
         return 9;
     }
+    
     public String toString()
     {
         return "Onion";

@@ -10,9 +10,9 @@ import java.util.*;
 
 public class Reader
 {
-    
+    private Menu m = new Menu();
     private Scanner s = new Scanner(System.in);
-    public Sandwich readLine()
+    public boolean readLine(Sandwich sandy)
     {
         String line = s.nextLine();
         

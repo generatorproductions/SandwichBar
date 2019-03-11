@@ -50,7 +50,13 @@ public class SandwichMaker
         m.printMenu();
         
         System.out.println("When you're ready, type anything and press enter.");
-        s.next();
+        String secret = s.next().trim();
+        if(secret.equalsIgnoreCase("where'sthekale?"))
+        {
+            System.out.println("RIP Kale");
+            System.out.println("Type anything to proceed.");
+            s.next();
+        }
         try{
             cc.clear();
         }catch(Exception e){}

@@ -81,6 +81,20 @@ public class Sandwich
         sandwichMade = 0;
     }
     
+    public SandwichParts[] getParts()
+    {
+        if(v2 != null && s2 != null)
+        {
+           return  new SandwichParts[]{g,p,s1,s2,v1,v2};
+        }
+            
+        else if(v2 != null && s2 == null)
+            return  new SandwichParts[]{g,p,s1,v1,v2};
+        else
+            return  new SandwichParts[]{g,p,s1,v1};
+        
+    }
+    
     public String toString()
     {
         String result = "";

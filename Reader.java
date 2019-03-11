@@ -7,6 +7,7 @@
  */
 
 import java.util.*;
+import SandyParts.*;
 
 public class Reader
 {
@@ -15,7 +16,8 @@ public class Reader
     public boolean readLine(Sandwich sandy)
     {
         String line = s.nextLine();
-        
+        String[] abrev = m.getAbrev();
+        SandwichParts[] parts = m.getParts();
         
         
         

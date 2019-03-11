@@ -9,6 +9,7 @@ package SandyParts;
 abstract public class SandwichParts
 {
     private static int totalParts = 0;
+    
     public SandwichParts()
     {
         totalParts++;
@@ -25,4 +26,6 @@ abstract public class SandwichParts
     {
         return 0;
     }
+    
+    
 }

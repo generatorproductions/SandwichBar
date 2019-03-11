@@ -17,10 +17,18 @@ public class Reader
     {
         String line = s.nextLine();
         String[] abrev = m.getAbrev();
-        SandwichParts[] parts = m.getParts();
+        SandwichParts[] lParts = m.getParts();
+        SandwichParts[] sParts = sandy.getParts();
+        String comparer = "";
+        for(SandwichParts s1 : sParts)
+        {
+            for(int i = 0; i < lParts.length; i++)
+            {
+                if(s1 == lParts[i])
+                    comparer += abrev[i];
+            }
+        }
         
-        
-        
-        
+        return true;
     }
 }

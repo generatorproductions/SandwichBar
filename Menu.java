@@ -25,7 +25,8 @@ public class Menu
     {
         
         int i = 0;
-        
+        if(diff.equals("e") || diff.equalsIgnoreCase("easy"))
+        {
             difficulty = "easy";
             menuString += "\n";
             for(String s : easyOptions)
@@ -38,15 +39,36 @@ public class Menu
                 }
             }
             menuString += "\n";
-        
-        
+        }
+        else if(diff.equals("h") || diff.equalsIgnoreCase("hard"))
+        {
+            difficulty = "hard";
+            menuString += "\n";
+            for(String s : hardOptions)
+            {
+                menuString += parts[i] + "- " + s + "\t\t";
+                i++;
+                if(i % 3 == 0)
+                {
+                    menuString += "\n";
+                }
+            }
+            menuString += "\n";
+        }
     }
     
-    public String[][] getValues()
+    public String[] getAbrev()
     {
-        String[][] result = new String[2][parts.length];
-        
-        return result;
+       if(difficulty.equals("easy"))
+            return easyOptions;
+       else if(difficulty.equals("hard"))
+            return hardOptions;
+            return easyOptions;
+    }
+    
+    public SandwichParts[] getParts()
+    {
+        return parts;
     }
     
     public void printMenu()

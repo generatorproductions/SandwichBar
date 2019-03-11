@@ -88,7 +88,7 @@ public class Sandwich
         if(v2 != null && s2 != null)
             result += v2 + ", " + s1 + ", and " + s2;
         else if(v2 != null && s2 == null)
-            result += v2 + ", and  " + s1;
+            result += v2 + ", and " + s1;
         else
             result += "and " + s1;
         return result;

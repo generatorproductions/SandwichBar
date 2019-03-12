@@ -13,8 +13,9 @@ public class SandwichMaker
     public static ArrayList<Protein> protein = new ArrayList<Protein>();
     public static ArrayList<Sauce> sauce = new ArrayList<Sauce>();
     public static ConsoleClear cc = new ConsoleClear();
-    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples"};
+    public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples", "Kalamari Canteen", "Bell's Kitchen", "Chokey Chicken", "Bouta Burger", "Whippin' Weasel","Finna Freash","The Whipped Dream"};
     private static Scanner s = new Scanner(System.in);
+    private static Reader r = new Reader();
     public static void main(String [] args)
     {
         arrayListMakers();
@@ -22,7 +23,7 @@ public class SandwichMaker
         String diff = "";
         while(diff.equals(""))
         {
-            String response = s.next();
+            String response = s.nextLine();
             if(response.equalsIgnoreCase("hard"))
             {
                 diff = "h";
@@ -44,6 +45,7 @@ public class SandwichMaker
         Menu m = new Menu(diff);
         
         
+        
         System.out.println("Welcome to the "+ RES_NAMES[(int)(Math.random() * RES_NAMES.length)] +" new hire!");
         System.out.println("Please memorize the menu before the customers arrive.");
         
@@ -61,18 +63,22 @@ public class SandwichMaker
             cc.clear();
         }catch(Exception e){}
         Customer easyC = new EasyCustomer();
-        Customer midC = new MidCustomer();
-        Customer diffC = new DifficultCustomer();
-        System.out.println(easyC.getName() + ": I'd like a " + createEasySandy() + ".");
-        System.out.println(midC.getName() + ": I'd like a " + createMidSandy() + ".");
-        System.out.println(diffC.getName() + ": I'd like a " + createDiffSandy() + ".");
-        /*
-        Sandwich sand1 = new Sandwich(g, p, s, v);
-        Sandwich sand2 = new Sandwich(g, p, s, l);
-        System.out.println(sand1.compare(sand1, sand2));
-        System.out.println(sand1.addCalories());
-        System.out.println(p.getTotalParts());
-        */
+        Sandwich sand5 = createEasySandy();
+        //Customer midC = new MidCustomer();
+        //Customer diffC = new DifficultCustomer();
+        System.out.println(easyC.getName() + ": I'd like a " + sand5 + ".");
+        //System.out.println(midC.getName() + ": I'd like a " + createMidSandy() + ".");
+        //System.out.println(diffC.getName() + ": I'd like a " + createDiffSandy() + ".");
+        
+        if(r.readLine(sand5))
+        {
+            System.out.println(easyC.goodResponse());
+        }
+        else
+        {
+            System.out.println(easyC.badResponse());
+        }
+        
     }
     
     public static void arrayListMakers()

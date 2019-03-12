@@ -17,10 +17,38 @@ public class Reader
     {
         String line = s.nextLine();
         String[] abrev = m.getAbrev();
-        SandwichParts[] parts = m.getParts();
+        SandwichParts[] lParts = m.getParts();
+        SandwichParts[] sParts = sandy.getParts();
+        String comparer = "";
+        boolean result = true;
+        for(SandwichParts s1 : sParts)
+        {
+            for(int i = 0; i < lParts.length; i++)
+            {
+                if(s1.toString().equals( lParts[i].toString()))
+                {
+                    comparer += abrev[i];
+                    
+                    if(line.indexOf(abrev[i]) == -1)
+                    {
+                        result = false;
+                    }
+                    else
+                    {
+                        System.out.print(s1.noise() + " ");
+                    }
+                    
+                }
+            }
+        }
         
+        if(comparer.length() != line.length())
+        {
+            result = false;
+        }
         
-        
-        
+        System.out.println();
+        return result;
     }
+    
 }

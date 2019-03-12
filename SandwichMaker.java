@@ -63,15 +63,21 @@ public class SandwichMaker
             cc.clear();
         }catch(Exception e){}
         Customer easyC = new EasyCustomer();
-        Customer midC = new MidCustomer();
-        Customer diffC = new DifficultCustomer();
-        System.out.println(easyC.getName() + ": I'd like a " + createEasySandy() + ".");
-        System.out.println(midC.getName() + ": I'd like a " + createMidSandy() + ".");
-        System.out.println(diffC.getName() + ": I'd like a " + createDiffSandy() + ".");
         Sandwich sand5 = createEasySandy();
-        System.out.println(sand5);
+        //Customer midC = new MidCustomer();
+        //Customer diffC = new DifficultCustomer();
+        System.out.println(easyC.getName() + ": I'd like a " + sand5 + ".");
+        //System.out.println(midC.getName() + ": I'd like a " + createMidSandy() + ".");
+        //System.out.println(diffC.getName() + ": I'd like a " + createDiffSandy() + ".");
         
-        System.out.println(r.readLine(sand5));
+        if(r.readLine(sand5))
+        {
+            System.out.println(easyC.goodResponse());
+        }
+        else
+        {
+            System.out.println(easyC.badResponse());
+        }
         
     }
     

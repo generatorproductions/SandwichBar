@@ -47,7 +47,7 @@ public class Reader
             result = false;
         }
         
-        System.out.println(comparer);
+        System.out.println();
         return result;
     }
     

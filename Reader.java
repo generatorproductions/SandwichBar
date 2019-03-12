@@ -20,15 +20,35 @@ public class Reader
         SandwichParts[] lParts = m.getParts();
         SandwichParts[] sParts = sandy.getParts();
         String comparer = "";
+        boolean result = true;
         for(SandwichParts s1 : sParts)
         {
             for(int i = 0; i < lParts.length; i++)
             {
-                if(s1 == lParts[i])
+                if(s1.toString().equals( lParts[i].toString()))
+                {
                     comparer += abrev[i];
+                    
+                    if(line.indexOf(abrev[i]) == -1)
+                    {
+                        result = false;
+                    }
+                    else
+                    {
+                        System.out.print(s1.noise() + " ");
+                    }
+                    
+                }
             }
         }
         
-        return true;
+        if(comparer.length() != line.length())
+        {
+            result = false;
+        }
+        
+        System.out.println(comparer);
+        return result;
     }
+    
 }

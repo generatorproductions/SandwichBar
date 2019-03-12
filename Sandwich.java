@@ -85,13 +85,12 @@ public class Sandwich
     {
         if(v2 != null && s2 != null)
         {
-           return  new SandwichParts[]{g,p,s1,s2,v1,v2};
+           return  new SandwichParts[]{g,p,v1,v2,s1,s2};
         }
-            
         else if(v2 != null && s2 == null)
-            return  new SandwichParts[]{g,p,s1,v1,v2};
+            return  new SandwichParts[]{g,p,v1,v2, s1};
         else
-            return  new SandwichParts[]{g,p,s1,v1};
+            return  new SandwichParts[]{g,p,v1,s1};
         
     }
     

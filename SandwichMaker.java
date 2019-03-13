@@ -72,7 +72,7 @@ public class SandwichMaker
         
         for(int i = 0; i < 10; i++)
         {
-            Customer c;
+            Responses c;
             Sandwich s;
             int rand = (int)(Math.random() * 3);
             if(rand == 0)

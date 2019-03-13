@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class DifficultCustomer implements Customer
+public class DifficultCustomer implements Responses
 {
     private String name = "Name";
     private int index = (int)(Math.random() * names[1].length);

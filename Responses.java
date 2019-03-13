@@ -4,7 +4,7 @@
  * @author Generator Productions
  * @version 1.0
  */
-public interface Customer
+public interface Responses
 {
     String[][] names = {{"Cole", "Gage", "Myla", "Kevin", "Sonny", "Granny", "Arnold", "Paul Blart", "Stoop Kid", "Tory Christensen"}, /* Easy */
                         {"Mr. Gibbs", "Angelo", "Hunter", "Jordan", "Mrs. Puff", "Guy Fieri", "Perch Perkins", "MatPat", "Dan Gheesling", "ZywOo"}, /* Mid */

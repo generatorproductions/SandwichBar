@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class EasyCustomer implements Customer
+public class EasyCustomer implements Responses
 {
     private String name = "Name";
     private int index = (int)(Math.random() * names[1].length);

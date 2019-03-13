@@ -13,14 +13,23 @@ public class EasyCustomer implements Customer
     {
         name = names[0][index];
     }
+    /**
+     * @return: A String with the good response for the customer
+     */
     public String goodResponse()
     {
         return goodResponses[0][index];
     }
+    /**
+     * @return: A String with the bad response for the customer
+     */
     public String badResponse()
     {
         return badResponses[0][index];
     }
+    /**
+     * @return: A String that is the name of the customer
+     */
     public String getName()
     {
         return name;

@@ -1,18 +1,19 @@
-
-/**
- * Write a description of class EasyCustomer here.
+/** 
+ * Finds the name and response of the selected easy customer.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 public class EasyCustomer implements Responses
 {
     private String name = "Name";
     private int index = (int)(Math.random() * names[1].length);
+    
     public EasyCustomer()
     {
         name = names[0][index];
     }
+    
     /**
      * @return: A String with the good response for the customer
      */
@@ -20,6 +21,7 @@ public class EasyCustomer implements Responses
     {
         return goodResponses[0][index];
     }
+    
     /**
      * @return: A String with the bad response for the customer
      */
@@ -27,6 +29,7 @@ public class EasyCustomer implements Responses
     {
         return badResponses[0][index];
     }
+    
     /**
      * @return: A String that is the name of the customer
      */
@@ -34,5 +37,4 @@ public class EasyCustomer implements Responses
     {
         return name;
     }
-    
 }

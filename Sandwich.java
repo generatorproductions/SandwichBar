@@ -1,8 +1,8 @@
 /**
  * Write a description of class Sandwich here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 import SandyParts.*;
 

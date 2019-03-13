@@ -11,6 +11,9 @@ public class Sandwich
     SandwichParts g, p, s1, s2, v1, v2;
     private static int sandwichMade = 0;
     
+    /**
+     * Makes a sandwich with all parts
+     */
     public Sandwich(Grain p1, Protein p2, Sauce p3, Sauce p4, Veggie p5, Veggie p6)
     {
         g = p1;
@@ -22,6 +25,9 @@ public class Sandwich
         sandwichMade++;
     }
     
+    /**
+     * Makes a sandwich with 2 sauces and 1 veggie
+     */
     public Sandwich(Grain p1, Protein p2, Sauce p3, Sauce p4, Veggie p5)
     {
         g = p1;
@@ -32,6 +38,9 @@ public class Sandwich
         sandwichMade++;
     }
     
+    /**
+     * Makes a sandwich with 1 sauce and 2 veggies
+     */
     public Sandwich(Grain p1, Protein p2, Sauce p3, Veggie p5, Veggie p6)
     {
         g = p1;
@@ -42,6 +51,9 @@ public class Sandwich
         sandwichMade++;
     }
     
+    /**
+     * Makes a sandwich with 1 sauce and 1 veggie
+     */
     public Sandwich(Grain p1, Protein p2, Sauce p3, Veggie p5)
     {
         g = p1;
@@ -51,6 +63,10 @@ public class Sandwich
         sandwichMade++;
     }
     
+    /**
+     * @return: True if 2 sandwiches are identical
+     * false otherwise
+     */
     public boolean compare(Sandwich sand1, Sandwich sand2)
     {
         if(sand1.g == sand2.g && sand1.p == sand2.p && sand1.s1 == sand2.s1 &&sand1.s2 == sand2.s2 &&sand1.v1 == sand2.v1 &&sand1.v2 == sand2.v2)
@@ -59,6 +75,9 @@ public class Sandwich
             return false;
     }
     
+    /**
+     * @return: A numerical value of the total calories of all parts of the sandwich
+     */
     public int addCalories()
     {
         int total = g.getCalories() + p.getCalories() + s1.getCalories()  + v1.getCalories() ;
@@ -71,16 +90,25 @@ public class Sandwich
         return total;
     }
     
+    /**
+     * @return: The amount of parts in the sandwich
+     */
     public int getTotalMade()
     {
         return sandwichMade;
     }
     
+    /**
+     * Resets the counter to 0
+     */
     public void resetTotalMade()
     {
         sandwichMade = 0;
     }
     
+    /**
+     * @return: An array of the sandwich parts that make up the sandwich
+     */
     public SandwichParts[] getParts()
     {
         if(v2 != null && s2 != null)
@@ -94,6 +122,9 @@ public class Sandwich
         
     }
     
+    /**
+     * @return: Constructs the sentence that the customers say when ordering a sandwich
+     */
     public String toString()
     {
         String result = "";

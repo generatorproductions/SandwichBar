@@ -10,7 +10,7 @@ public class PlainBagel extends Bagel
 {
     public String noise()
     {
-        return "Mhmm";
+        return "Thump";
     }
     
     public int getCalories()

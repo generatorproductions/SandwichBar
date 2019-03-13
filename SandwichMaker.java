@@ -16,6 +16,9 @@ public class SandwichMaker
     public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples", "Kalamari Canteen", "Bell's Kitchen", "Chokey Chicken", "Bouta Burger", "Whippin' Weasel","Finna Freash","The Whipped Dream"};
     private static Scanner scanner = new Scanner(System.in);
     private static Reader r = new Reader();
+    /**
+     * It's the main method
+     */
     public static void main(String [] args)
     {
         int score = 0;
@@ -114,7 +117,9 @@ public class SandwichMaker
             System.out.println("You're Fired! You got a score of " + score + "/10");
         
     }
-    
+    /**
+     * @return: Contructs the arraylists for grains, veggies, sauce, and proteins
+     */
     public static void arrayListMakers()
     {
         grain.add(new EverythingBagel());
@@ -139,7 +144,9 @@ public class SandwichMaker
         protein.add(new Tofu());
         protein.add(new Beef());
     }
-    
+    /**
+     * @return: A sandwich object with 1 grain, 1 protein, 1 veggie, and 1 sauce
+     */
     public static Sandwich createEasySandy()
     {
         Grain g = grain.get((int)(Math.random() * grain.size()));
@@ -149,7 +156,9 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, v);
         return sandy;
     }
-    
+    /**
+     * @return: A sandwich object with 1 grain, 1 protein, 2 veggie, and 1 sauce
+     */
     public static Sandwich createMidSandy()
     {
         Grain g = grain.get((int)(Math.random() * grain.size()));
@@ -164,7 +173,9 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, v, v2);
         return sandy;
     }
-    
+    /**
+     * @return: A sandwich object with 1 grain, 1 protein, 2 veggie, and 2 sauce
+     */
     public static Sandwich createDiffSandy()
     {
         Grain g = grain.get((int)(Math.random() * grain.size()));

@@ -1,8 +1,8 @@
 /**
- * Write a description of class Customer here.
+ * Creates customers, sets them to a difficulty, and links them to both a good and a bad response.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 public interface Customer
 {
@@ -15,7 +15,16 @@ public interface Customer
     String [][] badResponses = {{"...", "Wot.", "Reeee!", "Oh god, this is disgusting.", "Eww.", "Do better next time, kiddo.", "Good try.", "This is gross.", "I shouldn't have left my stoop for this...", "*Unenthusiastic high-five*"}, 
                                 {"I'm not your bro.", "I don't like sandwiches anyway.", "Nah, that ain't for me.", "That ain't it, chief.", "Go back to school.", "No, dawg.", "I'd rather go to the Chum Bucket.", "Yuck.", "You'll get em next time.", "Hehe, I don't know (bad)."},
                                 {"The person who made this is nucking futs.", "This isn't good.", "You failed me... just like my El Gato.", "Okay, I'm done for today.", "You forgot the pickles.", "*Walks out the door*", "Was this made by a little elephant?", "Sweet potatoes! This is a bad sandwich.", "What is this. It is dryyyy!", "This is trash."}};
+    /**
+     * @return: The customer's good response.
+     */
     public String goodResponse();
+    /**
+     * @return: The customer's bad response.
+     */
     public String badResponse();
+    /**
+     * @return: The customer's name.
+     */
     public String getName();
 }

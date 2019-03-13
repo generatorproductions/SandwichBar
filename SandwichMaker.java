@@ -14,16 +14,17 @@ public class SandwichMaker
     public static ArrayList<Sauce> sauce = new ArrayList<Sauce>();
     public static ConsoleClear cc = new ConsoleClear();
     public static final String RES_NAMES[] = {"Grimmy Grab", "Krusty Karb", "Elong Must", "The Peppery Plantain", "Benni's Hut Sr.", "Chu Train & Shoe Crain", "Glovey Gapples", "Kalamari Canteen", "Bell's Kitchen", "Chokey Chicken", "Bouta Burger", "Whippin' Weasel","Finna Freash","The Whipped Dream"};
-    private static Scanner s = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
     private static Reader r = new Reader();
     public static void main(String [] args)
     {
+        int score = 0;
         arrayListMakers();
         System.out.println("What difficulty do you want to play on? (easy/hard)");
         String diff = "";
         while(diff.equals(""))
         {
-            String response = s.nextLine();
+            String response = scanner.nextLine();
             if(response.equalsIgnoreCase("hard"))
             {
                 diff = "h";
@@ -52,32 +53,65 @@ public class SandwichMaker
         m.printMenu();
         
         System.out.println("When you're ready, type anything and press enter.");
-        String secret = s.next().trim();
+        String secret = scanner.next().trim();
         if(secret.equalsIgnoreCase("where'sthekale?"))
         {
             System.out.println("RIP Kale");
             System.out.println("Type anything to proceed.");
-            s.next();
+            scanner.next();
+        }
+        else if(secret.equalsIgnoreCase("where'stheyeehaw?"))
+        {
+            System.out.println("RIP Yee Haw");
+            System.out.println("Type anything to proceed.");
+            scanner.next();
         }
         try{
             cc.clear();
         }catch(Exception e){}
-        Customer easyC = new EasyCustomer();
-        Sandwich sand5 = createEasySandy();
-        //Customer midC = new MidCustomer();
-        //Customer diffC = new DifficultCustomer();
-        System.out.println(easyC.getName() + ": I'd like a " + sand5 + ".");
-        //System.out.println(midC.getName() + ": I'd like a " + createMidSandy() + ".");
-        //System.out.println(diffC.getName() + ": I'd like a " + createDiffSandy() + ".");
         
-        if(r.readLine(sand5))
+        for(int i = 0; i < 10; i++)
         {
-            System.out.println(easyC.goodResponse());
+            Customer c;
+            Sandwich s;
+            int rand = (int)(Math.random() * 3);
+            if(rand == 0)
+            {
+                c = new EasyCustomer();
+                s = createEasySandy();
+            }
+            else if(rand == 1)
+            {
+                c = new MidCustomer();
+                s = createMidSandy();
+            }
+            else
+            {
+                c = new DifficultCustomer();
+                s = createDiffSandy();
+            }
+            System.out.println(c.getName() + ": I'd like a " + s + ".");
+            if(r.readLine(s))
+            {
+                System.out.println(c.getName() + ": " + c.goodResponse());
+                score++;
+            }
+            else
+            {
+                System.out.println(c.getName() + ": " + c.badResponse());
+            }
+            System.out.println("Type anything to proceed.");
+            scanner.next();
+            try{
+                cc.clear();
+            }catch(Exception e){}
         }
-        else
-        {
-            System.out.println(easyC.badResponse());
-        }
+        if(score >= 10)
+            System.out.println("Well done! You got score of 10/10!");
+        else if(score >= 7)
+            System.out.println("Not Bad! You got a score of " + score + "/10");
+        else 
+            System.out.println("You're Fired! You got a score of " + score + "/10");
         
     }
     

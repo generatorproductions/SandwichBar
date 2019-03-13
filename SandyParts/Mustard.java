@@ -13,7 +13,6 @@ public class Mustard extends Sauce
         return "Squirt";
     }
     
-    
     public int getCalories()
     {
         return 3;

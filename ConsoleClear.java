@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class LineClear here.
  *
@@ -19,5 +18,4 @@ public class ConsoleClear
     {
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
     }
-
 }

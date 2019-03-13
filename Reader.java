@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Reader here.
+ * The Reader class reads an input from the user and compares it to a sandwich.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Generator Productions)
+ * @version (1.0)
  */
 
 import java.util.*;
@@ -13,6 +13,11 @@ public class Reader
 {
     private Menu m = new Menu();
     private Scanner s = new Scanner(System.in);
+    /**
+     * Asks the user for input and uses that input to compare to a sandwich
+     * if the input and the sandwich are the same returns true
+     * else returns false;
+     */
     public boolean readLine(Sandwich sandy)
     {
         String line = s.nextLine();

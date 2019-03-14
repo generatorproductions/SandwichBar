@@ -8,5 +8,8 @@ package SandyParts;
  */
 abstract public class Protein extends SandwichParts
 {
+    /*
+     * @return: Calorie count of protein
+     */
     abstract public int getCalories();
 }

@@ -1,10 +1,10 @@
 package SandyParts;
 
 /**
- * Write a description of class HotSauce here.
+ * Hot Sauce
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 public class HotSauce extends Sauce
 {

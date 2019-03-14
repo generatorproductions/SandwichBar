@@ -1,14 +1,15 @@
 package SandyParts;
 
 /**
- * Write a description of class Sauce here.
+ * Sauces
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
-
-
 abstract public class Sauce extends SandwichParts
 {
+    /*
+     * @return: Calorie count of sauces
+     */
     abstract public int getCalories();
 }

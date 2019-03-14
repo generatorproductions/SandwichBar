@@ -1,10 +1,10 @@
 package SandyParts;
 
 /**
- * Write a description of class Bagel here.
+ * Bagels
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 abstract public class Bagel extends Grain
 {

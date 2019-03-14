@@ -1,10 +1,10 @@
 package SandyParts;
 
 /**
- * Write a description of class Mayonnaise here.
+ * Mayonnaise
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 public class Mayonnaise extends Sauce
 {

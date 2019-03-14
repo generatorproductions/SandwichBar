@@ -1,12 +1,15 @@
 package SandyParts;
 
 /**
- * Write a description of class Bread here.
+ * 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 abstract public class Grain extends SandwichParts
 {
+    /*
+     * @return: Calorie count of grains
+     */
     abstract public int getCalories();
 }

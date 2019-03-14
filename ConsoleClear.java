@@ -1,5 +1,5 @@
 /**
- * Clears Console
+ * Clears console
  *
  * @author Generator Productions
  * @version 1.0

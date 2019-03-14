@@ -1,10 +1,10 @@
 package SandyParts;
 
 /**
- * Write a description of class Sliced here.
+ * Sliced grains
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 abstract public class Sliced extends Grain
 {

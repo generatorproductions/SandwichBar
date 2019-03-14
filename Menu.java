@@ -35,7 +35,7 @@ public class Menu
             menuString += "\n";
             for(String s : easyOptions)
             {
-                menuString += parts[i] + "- " + s + "\t\t";
+                menuString += parts[i] + "- " + s + "\t";
                 i++;
                 if(i % 3 == 0)
                 {

@@ -55,7 +55,7 @@ public class SandwichMaker
         
         m.printMenu();
         
-        System.out.println("When you're ready, type anything and press enter.");
+        System.out.println("When you're ready, type anything and press enter. Or you can choose to leave. (Exit)");
         String secret = scanner.next().trim();
         if(secret.equalsIgnoreCase("where'sthekale?"))
         {
@@ -68,6 +68,12 @@ public class SandwichMaker
             System.out.println("RIP Yee Haw");
             System.out.println("Type anything to proceed.");
             scanner.next();
+        }
+        else if(secret.equalsIgnoreCase("Exit"))
+        {
+            System.out.println("throw new RuntimeException();");
+            //throw new RuntimeException();
+            System.exit(0);
         }
         try{
             cc.clear();

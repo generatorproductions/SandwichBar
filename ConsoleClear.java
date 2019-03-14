@@ -1,14 +1,14 @@
 /**
- * Write a description of class LineClear here.
+ * Clears Console
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Generator Productions
+ * @version 1.0
  */
 import java.io.IOException;
 
 public class ConsoleClear
 {
-    /*
+    /**
      * To use this clear method you need to surround it in a try catch as so
      * try{
             cc.clear();

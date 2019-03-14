@@ -1,8 +1,8 @@
 /** 
  * Finds the name and response of the selected easy customer.
  *
- * @author Generator Productions
- * @version 1.0
+ * @author: Generator Productions
+ * @version: 1.0
  */
 public class EasyCustomer implements Responses
 {

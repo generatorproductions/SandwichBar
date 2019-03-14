@@ -1,8 +1,8 @@
 /**
  * Creates customers, sets them to a difficulty, and links them to both a good and a bad response.
  *
- * @author Generator Productions
- * @version 1.0
+ * @author: Generator Productions
+ * @version: 1.0
  */
 public interface Responses
 {

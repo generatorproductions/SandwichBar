@@ -17,7 +17,7 @@ public class SandwichMaker
     private static Scanner scanner = new Scanner(System.in);
     private static Reader r = new Reader();
     /**
-     * It's the main method
+     * Main method
      */
     public static void main(String [] args)
     {
@@ -47,8 +47,6 @@ public class SandwichMaker
         }catch(Exception e){}
         
         Menu m = new Menu(diff);
-        
-        
         
         System.out.println("Welcome to the "+ RES_NAMES[(int)(Math.random() * RES_NAMES.length)] +" new hire!");
         System.out.println("Please memorize the menu before the customers arrive.");
@@ -117,6 +115,7 @@ public class SandwichMaker
             System.out.println("You're Fired! You got a score of " + score + "/10");
         
     }
+    
     /**
      * @return: Contructs the arraylists for grains, veggies, sauce, and proteins
      */
@@ -144,6 +143,7 @@ public class SandwichMaker
         protein.add(new Tofu());
         protein.add(new Beef());
     }
+    
     /**
      * @return: A sandwich object with 1 grain, 1 protein, 1 veggie, and 1 sauce
      */
@@ -156,6 +156,7 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, v);
         return sandy;
     }
+    
     /**
      * @return: A sandwich object with 1 grain, 1 protein, 2 veggie, and 1 sauce
      */
@@ -173,6 +174,7 @@ public class SandwichMaker
         Sandwich sandy = new Sandwich(g, p, s, v, v2);
         return sandy;
     }
+    
     /**
      * @return: A sandwich object with 1 grain, 1 protein, 2 veggie, and 2 sauce
      */

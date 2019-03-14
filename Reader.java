@@ -1,11 +1,9 @@
-
 /**
  * The Reader class reads an input from the user and compares it to a sandwich.
  *
- * @author (Generator Productions)
- * @version (1.0)
+ * @author: Generator Productions
+ * @version: 1.0
  */
-
 import java.util.*;
 import SandyParts.*;
 
@@ -55,5 +53,4 @@ public class Reader
         System.out.println();
         return result;
     }
-    
 }

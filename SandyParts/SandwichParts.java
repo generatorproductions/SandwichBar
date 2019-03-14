@@ -1,7 +1,7 @@
 package SandyParts;
 
 /**
- * 
+ * Gathers info on sandwich parts (amount, noise)
  *
  * @author Generator Productions
  * @version 1.0
@@ -15,17 +15,24 @@ abstract public class SandwichParts
         totalParts++;
     }
     
+    /*
+     * @return: Parts of the sandwich
+     */
     public int getTotalParts()
     {
         return totalParts;
     }
     
-    abstract public String noise(); // Returns the noise of constructing the part
-    // Returns the calorie count of the food 
+    /*
+     * @return: Noise of constructing the part
+     */
+    abstract public String noise(); 
+    
+    /*
+     * @return: Sets original calorie count to 0
+     */
     public int getCalories()
     {
         return 0;
     }
-    
-    
 }

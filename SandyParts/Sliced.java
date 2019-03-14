@@ -8,5 +8,8 @@ package SandyParts;
  */
 abstract public class Sliced extends Grain
 {
-    
+    public Sliced()
+    {
+        super();
+    }
 }

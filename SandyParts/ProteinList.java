@@ -1,11 +1,10 @@
 package SandyParts;
 
-
 /**
- * Write a description of class ProteinList here.
+ * A list for the Proteins
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author: Generator Productions
+ * @version: 1.0
  */
 import java.util.*;
 
@@ -13,11 +12,18 @@ public class ProteinList
 {
     private static ArrayList<Protein> proteinParts = new ArrayList<Protein>();
     
+    /*
+     * Adds a Protein to the Protein ArrayList
+     * @param: Takes in a Protein to add
+     */
     public void add(Protein g)
     {
         proteinParts.add(g);
     }
     
+    /*
+     * Gets a Protein from the ArrayList
+     */
     public ArrayList<Protein> getList()
     {   
         return proteinParts;

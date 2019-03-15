@@ -1,9 +1,8 @@
-
 /**
- * Write a description of class Tester here.
+ * Creates the parts
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author: Generator Productions
+ * @version: 1.0
  */
 import java.util.*;
 import SandyParts.*;
@@ -24,17 +23,19 @@ public class Tester
         new Lettuce();
         new Onion();
         new Cucumber();
+        new Pickle();
         
         new Hummus();
         new Mustard();
         new Mayonnaise();
         new HotSauce();
+        new BBQSauce();
         
         new Chicken();
         new Turkey();
         new Tofu();
         new Beef();
-        
+        new Bacon();
         
         GrainList g = new GrainList();
         ProteinList p = new ProteinList();

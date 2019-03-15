@@ -1,5 +1,5 @@
 /**
- * Write a description of class Sandwich here.
+ * Puts the sandwich together
  *
  * @author: Generator Productions
  * @version: 1.0
@@ -64,6 +64,7 @@ public class Sandwich
     }
     
     /**
+     * Compares two sandwiches
      * @return: True if 2 sandwiches are identical
      * false otherwise
      */
@@ -76,6 +77,7 @@ public class Sandwich
     }
     
     /**
+     * Adds calories of sandwich parts
      * @return: A numerical value of the total calories of all parts of the sandwich
      */
     public int addCalories()
@@ -91,6 +93,7 @@ public class Sandwich
     }
     
     /**
+     * Gets the number of parts in the sandwich
      * @return: The amount of parts in the sandwich
      */
     public int getTotalMade()
@@ -107,6 +110,7 @@ public class Sandwich
     }
     
     /**
+     * The sandwich array
      * @return: An array of the sandwich parts that make up the sandwich
      */
     public SandwichParts[] getParts()
@@ -119,11 +123,11 @@ public class Sandwich
             return  new SandwichParts[]{g,p,v1,v2, s1};
         else
             return  new SandwichParts[]{g,p,v1,s1};
-        
     }
     
     /**
-     * @return: Constructs the sentence that the customers say when ordering a sandwich
+     * Puts the responses together
+     * @return: Sentences that the customers say when ordering a sandwich
      */
     public String toString()
     {

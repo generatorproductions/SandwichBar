@@ -23,6 +23,7 @@ public class ProteinList
     
     /*
      * Gets a Protein from the ArrayList
+     * @return: A Protein
      */
     public ArrayList<Protein> getList()
     {   

@@ -1,5 +1,5 @@
 /**
- * Creates customers, sets them to a difficulty, and links them to both a good and a bad response.
+ * An interface that provides String[][]'s for classes that implement Responses.
  *
  * @author: Generator Productions
  * @version: 1.0

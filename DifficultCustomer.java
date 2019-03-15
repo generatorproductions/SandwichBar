@@ -15,6 +15,7 @@ public class DifficultCustomer implements Responses
     }
     
     /**
+     * Gets a good response
      * @return: A String with the good response for the customer
      */
     public String goodResponse()
@@ -23,6 +24,7 @@ public class DifficultCustomer implements Responses
     }
     
     /**
+     * Gets a bad response
      * @return: A String with the bad response for the customer
      */
     public String badResponse()
@@ -31,6 +33,7 @@ public class DifficultCustomer implements Responses
     }
     
     /**
+     * Gets the customer's name
      * @return: A String that is the name of the customer
      */
     public String getName()

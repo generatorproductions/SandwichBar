@@ -8,6 +8,13 @@ package SandyParts;
  */
 abstract public class Veggie extends SandwichParts
 {
+    private static VeggieList list = new VeggieList();
+    
+    public Veggie()
+    {
+        super();
+        list.add(this);
+    }
     /*
      * @return: Calorie count of veggies
      */

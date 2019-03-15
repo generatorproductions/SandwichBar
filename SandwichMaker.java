@@ -24,6 +24,7 @@ public class SandwichMaker
         int score = 0;
         arrayListMakers();
         System.out.println("What difficulty do you want to play on? (easy/hard)");
+        
         String diff = "";
         while(diff.equals(""))
         {
@@ -69,7 +70,7 @@ public class SandwichMaker
         }
         else if(secret.equalsIgnoreCase("Exit"))
         {
-            System.out.println("throw new RuntimeException();");
+            System.out.println("Goodbye.");
             //throw new RuntimeException();
             System.exit(0);
         }
@@ -138,16 +139,20 @@ public class SandwichMaker
         veggie.add(new Lettuce());
         veggie.add(new Onion());
         veggie.add(new Cucumber());
+        veggie.add(new Pickle());
         
         sauce.add(new Hummus());
         sauce.add(new Mustard());
         sauce.add(new Mayonnaise());
         sauce.add(new HotSauce());
+        sauce.add(new BBQSauce());
         
         protein.add(new Chicken());
         protein.add(new Turkey());
         protein.add(new Tofu());
         protein.add(new Beef());
+        protein.add(new Bacon());
+        
     }
     
     /**

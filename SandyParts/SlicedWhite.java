@@ -8,6 +8,11 @@ package SandyParts;
  */
 public class SlicedWhite extends Sliced
 {
+    public SlicedWhite()
+    {
+        super();
+    }
+    
      /**
      * @return: A string of the sound the food makes
      */
@@ -22,6 +27,22 @@ public class SlicedWhite extends Sliced
     public int getCalories()
     {
         return 79;
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Sh";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Lc";
     }
     
     /**

@@ -8,6 +8,12 @@ package SandyParts;
  */
 public class SlicedGrain extends Sliced
 {
+    
+    public SlicedGrain()
+    {
+        super();
+    }
+    
      /**
      * @return: A string of the sound the food makes
      */
@@ -22,6 +28,22 @@ public class SlicedGrain extends Sliced
     public int getCalories()
     {
         return 69;
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Sr";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Ic";
     }
     
     /**

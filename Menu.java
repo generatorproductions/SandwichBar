@@ -9,9 +9,15 @@ import SandyParts.*;
 
 public class Menu
 {
+    private static PartsList l = new PartsList();
+    private static ArrayList<String> easyOptions = l.getEasyAbbrev();
+    private static ArrayList<String> hardOptions = l.getHardAbbrev();
+    private static ArrayList<SandwichParts> parts = l.getParts();
+    /*
     private static String[] easyOptions = {"Rb", "Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "On","Pe", "Be", "Tk", "Ci","Tf", "Md", "Ma", "Hs", "Mm"};
     private static String[] hardOptions = {"Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "On","Pe", "Be", "Tk", "Ci","Tf", "Md", "Ma", "Hs","Mm", "Rb"};
     private static SandwichParts[] parts = {new RegularBun(),new SeededBun(),new SlicedGrain(),new SlicedWhite(),new PlainBagel(),new EverythingBagel(),new Lettuce(),new Cucumber(),new Onion(),new Pepper(),new Beef(),new Turkey(), new Chicken(),new Tofu(), new Mustard(), new Mayonnaise(), new HotSauce(),new Hummus()};
+    */
     private static String menuString = "";
     private static String difficulty = "";
     
@@ -35,7 +41,11 @@ public class Menu
             menuString += "\n";
             for(String s : easyOptions)
             {
-                menuString += parts[i] + "- " + s + "\t";
+                menuString += parts.get(i) + " - " + s + "\t";
+                if(parts.get(i).toString().length() < 11)
+                {
+                    menuString += "\t";
+                }
                 i++;
                 if(i % 3 == 0)
                 {
@@ -50,7 +60,12 @@ public class Menu
             menuString += "\n";
             for(String s : hardOptions)
             {
-                menuString += parts[i] + "- " + s + "\t\t";
+                menuString += parts.get(i) + " - " + s + "\t";
+                if(parts.get(i).toString().length() < 11)
+                {
+                    menuString += "\t";
+                }
+                
                 i++;
                 if(i % 3 == 0)
                 {
@@ -64,21 +79,9 @@ public class Menu
     /**
      * @return: The sandwich parts' abbreviations.
      */
-    public String[] getAbrev()
+    public String getDifficulty()
     {
-       if(difficulty.equals("easy"))
-            return easyOptions;
-       else if(difficulty.equals("hard"))
-            return hardOptions;
-            return easyOptions;
-    }
-    
-    /**
-     * @return: The parts of the sandwich.
-     */
-    public SandwichParts[] getParts()
-    {
-        return parts;
+       return difficulty;
     }
     
     /**

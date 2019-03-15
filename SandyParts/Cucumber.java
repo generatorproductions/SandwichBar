@@ -25,6 +25,22 @@ public class Cucumber extends Veggie
     }
     
     /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Cu";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Cb";
+    }
+    
+    /**
      * @return: A string of the food name
      */
     public String toString()

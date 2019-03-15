@@ -25,6 +25,22 @@ public class Hummus extends Sauce
     }
     
     /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Hm";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Yh";
+    }
+    
+    /**
      * @return: A string of the food name
      */
     public String toString()

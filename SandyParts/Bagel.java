@@ -8,5 +8,8 @@ package SandyParts;
  */
 abstract public class Bagel extends Grain
 {
-    
+    public Bagel()
+    {
+        super();
+    }
 }

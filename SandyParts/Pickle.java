@@ -1,19 +1,20 @@
 package SandyParts;
 
+
 /**
- * Pepper
+ * Pickle
  *
  * @author Generator Productions
  * @version 1.0
  */
-public class Pepper extends Veggie
+public class Pickle extends Veggie
 {
      /**
      * @return: A string of the sound the food makes
      */
     public String noise()
     {
-        return "Pop";
+        return "Snap";
     }
     
     /**
@@ -21,7 +22,7 @@ public class Pepper extends Veggie
      */
     public int getCalories()
     {
-        return 8;
+        return 7;
     }
     
     /**
@@ -29,7 +30,7 @@ public class Pepper extends Veggie
      */
     public String getEasyAbrev()
     {
-        return "Pe";
+        return "Pi";
     }
     
     /**
@@ -37,7 +38,7 @@ public class Pepper extends Veggie
      */
     public String getHardAbrev()
     {
-        return "Ht";
+        return "Sr";
     }
     
     /**
@@ -45,6 +46,6 @@ public class Pepper extends Veggie
      */
     public String toString()
     {
-        return "Pepper";
+        return "Pickle";
     }
 }

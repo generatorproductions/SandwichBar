@@ -8,6 +8,11 @@ package SandyParts;
  */
 public class Beef extends Protein
 {
+    public Beef()
+    {
+        super();
+    }
+    
      /**
      * @return: A string of the sound the food makes
      */
@@ -22,6 +27,22 @@ public class Beef extends Protein
     public int getCalories()
     {
         return 213;
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Be";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Rb";
     }
     
     /**

@@ -8,6 +8,12 @@ package SandyParts;
  */
 public class Chicken extends Protein
 {
+    public Chicken()
+    {
+        super();
+    }
+    
+    
      /**
      * @return: A string of the sound the food makes
      */
@@ -22,6 +28,22 @@ public class Chicken extends Protein
     public int getCalories()
     {
         return 335;
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Ci";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Kf";
     }
     
     /**

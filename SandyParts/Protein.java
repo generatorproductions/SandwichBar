@@ -8,6 +8,14 @@ package SandyParts;
  */
 abstract public class Protein extends SandwichParts
 {
+    private static ProteinList list = new ProteinList();
+    
+    public Protein()
+    {
+        super();
+        list.add(this);
+    }
+    
     /*
      * @return: Calorie count of protein
      */

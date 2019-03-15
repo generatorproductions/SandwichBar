@@ -25,6 +25,22 @@ public class PlainBagel extends Bagel
     }
     
     /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Pg";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "Gp";
+    }
+    
+    /**
      * @return: A string of the food name
      */
     public String toString()

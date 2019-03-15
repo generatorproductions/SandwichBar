@@ -25,6 +25,22 @@ public class SeededBun extends Bun
     }
     
     /**
+     * @return: A String that represents the abbreviations for the word on easy mode
+     */
+    public String getEasyAbrev()
+    {
+        return "Sb";
+    }
+    
+    /**
+     * @return: A String that represents the abbreviations for the word on hard mode
+     */
+    public String getHardAbrev()
+    {
+        return "De";
+    }
+    
+    /**
      * @return: A string of the food name
      */
     public String toString()

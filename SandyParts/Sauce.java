@@ -8,6 +8,13 @@ package SandyParts;
  */
 abstract public class Sauce extends SandwichParts
 {
+    private static SauceList list = new SauceList();
+    
+    public Sauce()
+    {
+        super();
+        list.add(this);
+    }
     /*
      * @return: Calorie count of sauces
      */

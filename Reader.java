@@ -11,6 +11,7 @@ public class Reader
 {
     private Menu m = new Menu();
     private Scanner s = new Scanner(System.in);
+    private PartsList l = new PartsList();
     /**
      * Asks the user for input and uses that input to compare to a sandwich
      * if the input and the sandwich are the same returns true
@@ -18,21 +19,30 @@ public class Reader
      */
     public boolean readLine(Sandwich sandy)
     {
+        
         String line = s.nextLine();
-        String[] abrev = m.getAbrev();
-        SandwichParts[] lParts = m.getParts();
+        ArrayList<String> abrev;
+        if(m.getDifficulty().equals("hard"))
+        {
+            abrev = l.getHardAbbrev();
+        }
+        else
+        {
+            abrev = l.getEasyAbbrev();
+        }
+        ArrayList<SandwichParts> lParts = l.getParts();
         SandwichParts[] sParts = sandy.getParts();
         String comparer = "";
         boolean result = true;
         for(SandwichParts s1 : sParts)
         {
-            for(int i = 0; i < lParts.length; i++)
+            for(int i = 0; i < lParts.size(); i++)
             {
-                if(s1.toString().equals( lParts[i].toString()))
+                if(s1.toString().equals( lParts.get(i).toString()))
                 {
-                    comparer += abrev[i];
+                    comparer += abrev.get(i);
                     
-                    if(line.indexOf(abrev[i]) == -1)
+                    if(line.indexOf(abrev.get(i)) == -1)
                     {
                         result = false;
                     }

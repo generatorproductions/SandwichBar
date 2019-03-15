@@ -1,19 +1,25 @@
 package SandyParts;
 
+
 /**
- * Pepper
+ * Beef
  *
  * @author Generator Productions
  * @version 1.0
  */
-public class Pepper extends Veggie
+public class Bacon extends Protein
 {
+    public Bacon()
+    {
+        super();
+    }
+    
      /**
      * @return: A string of the sound the food makes
      */
     public String noise()
     {
-        return "Pop";
+        return "Cruncl";
     }
     
     /**
@@ -21,7 +27,7 @@ public class Pepper extends Veggie
      */
     public int getCalories()
     {
-        return 8;
+        return 548;
     }
     
     /**
@@ -29,7 +35,7 @@ public class Pepper extends Veggie
      */
     public String getEasyAbrev()
     {
-        return "Pe";
+        return "Ba";
     }
     
     /**
@@ -37,7 +43,7 @@ public class Pepper extends Veggie
      */
     public String getHardAbrev()
     {
-        return "Ht";
+        return "Dd";
     }
     
     /**
@@ -45,6 +51,6 @@ public class Pepper extends Veggie
      */
     public String toString()
     {
-        return "Pepper";
+        return "Bacon";
     }
 }

@@ -78,7 +78,7 @@ public class SandwichMaker
             cc.clear();
         }catch(Exception e){}
         
-        for(int i = 0; i < 10; i++)
+        for(int i = 0; i < 5; i++)
         {
             Responses c;
             Sandwich s;
@@ -114,12 +114,14 @@ public class SandwichMaker
                 cc.clear();
             }catch(Exception e){}
         }
-        if(score >= 10)
-            System.out.println("Well done! You got score of 10/10!");
-        else if(score >= 7)
-            System.out.println("Not Bad! You got a score of " + score + "/10");
+        if(score >= 5)
+            System.out.println("Well done! You got a score of 5/5!");
+        else if(score >= 4)
+            System.out.println("Not Bad. You got a score of " + score + "/5");
+        else if(score >= 3)
+            System.out.println("You need to do better next time. You got a score of " + score + "/5");
         else 
-            System.out.println("You're Fired! You got a score of " + score + "/10");
+            System.out.println("You're Fired! You got a score of " + score + "/5");
         
     }
     

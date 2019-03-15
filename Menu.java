@@ -13,16 +13,11 @@ public class Menu
     private static ArrayList<String> easyOptions = l.getEasyAbbrev();
     private static ArrayList<String> hardOptions = l.getHardAbbrev();
     private static ArrayList<SandwichParts> parts = l.getParts();
-    /*
-    private static String[] easyOptions = {"Rb", "Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "On","Pe", "Be", "Tk", "Ci","Tf", "Md", "Ma", "Hs", "Mm"};
-    private static String[] hardOptions = {"Sb", "Sr", "Sh", "Pg", "Ev", "Lt", "Cb", "On","Pe", "Be", "Tk", "Ci","Tf", "Md", "Ma", "Hs","Mm", "Rb"};
-    private static SandwichParts[] parts = {new RegularBun(),new SeededBun(),new SlicedGrain(),new SlicedWhite(),new PlainBagel(),new EverythingBagel(),new Lettuce(),new Cucumber(),new Onion(),new Pepper(),new Beef(),new Turkey(), new Chicken(),new Tofu(), new Mustard(), new Mayonnaise(), new HotSauce(),new Hummus()};
-    */
     private static String menuString = "";
     private static String difficulty = "";
     
     /**
-     * Creates the menu.
+     * Creates a Menu object
      */
     public Menu()
     {
@@ -30,7 +25,7 @@ public class Menu
     }
     
     /**
-     * Sets difficulty
+     * Sets difficulty and constructs menuString based on difficulty
      * @param: The difficulty that the user wishes to play on
      */
     public Menu(String diff)
@@ -79,7 +74,7 @@ public class Menu
     
     /**
      * Gets the difficulty
-     * @return: The sandwich parts' abbreviations.
+     * @return: A string that represents difficulty.
      */
     public String getDifficulty()
     {
@@ -87,7 +82,7 @@ public class Menu
     }
     
     /**
-     * Prints out the menu.
+     * Prints out the menu to the console.
      */
     public void printMenu()
     {

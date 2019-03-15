@@ -1,8 +1,8 @@
 /**
- * Write a description of class SandwichMaker here.
+ * Runs the program
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author: Generator Productions
+ * @version: 1.0
  */
 import java.util.*;
 import SandyParts.*;
@@ -124,7 +124,7 @@ public class SandwichMaker
     }
     
     /**
-     * @return: Contructs the arraylists for grains, veggies, sauce, and proteins
+     * Contructs the arraylists for grains, veggies, sauce, and proteins
      */
     public static void arrayListMakers()
     {
@@ -156,6 +156,7 @@ public class SandwichMaker
     }
     
     /**
+     * Randomly selects sandwich parts
      * @return: A sandwich object with 1 grain, 1 protein, 1 veggie, and 1 sauce
      */
     public static Sandwich createEasySandy()
@@ -169,6 +170,7 @@ public class SandwichMaker
     }
     
     /**
+     * Randomly selects sandwich parts
      * @return: A sandwich object with 1 grain, 1 protein, 2 veggie, and 1 sauce
      */
     public static Sandwich createMidSandy()
@@ -187,6 +189,7 @@ public class SandwichMaker
     }
     
     /**
+     * Randomly selects sandwich parts
      * @return: A sandwich object with 1 grain, 1 protein, 2 veggie, and 2 sauce
      */
     public static Sandwich createDiffSandy()

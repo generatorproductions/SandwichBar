@@ -19,7 +19,6 @@ public class Reader
      */
     public boolean readLine(Sandwich sandy)
     {
-        
         String line = s.nextLine();
         ArrayList<String> abrev;
         if(m.getDifficulty().equals("hard"))
@@ -50,16 +49,13 @@ public class Reader
                     {
                         System.out.print(s1.noise() + " ");
                     }
-                    
                 }
             }
         }
-        
         if(comparer.length() != line.length())
         {
             result = false;
         }
-        
         System.out.println();
         return result;
     }

@@ -1,8 +1,8 @@
 /**
  * Sets the menu items and their abbreviations based on difficulty.
  *
- * @author Generator Productions
- * @version 1.0
+ * @author: Generator Productions
+ * @version: 1.0
  */
 import java.util.*;
 import SandyParts.*;
@@ -30,7 +30,8 @@ public class Menu
     }
     
     /**
-     * @param: The difficulty that the user wishes to play on.
+     * Sets difficulty
+     * @param: The difficulty that the user wishes to play on
      */
     public Menu(String diff)
     {
@@ -77,6 +78,7 @@ public class Menu
     }
     
     /**
+     * Gets the difficulty
      * @return: The sandwich parts' abbreviations.
      */
     public String getDifficulty()

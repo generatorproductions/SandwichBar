@@ -19,10 +19,4 @@ abstract public class Grain extends SandwichParts
         list.add(this);
     }
         
-    /*
-     * @return: Calorie count of grains
-     */
-    abstract public int getCalories();
-    
-    
 }

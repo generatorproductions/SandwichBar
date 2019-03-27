@@ -31,6 +31,9 @@ public class Menu
     public Menu(String diff)
     {
         int i = 0;
+        
+        
+        
         if(diff.equals("e") || diff.equalsIgnoreCase("easy"))
         {
             difficulty = "easy";
@@ -86,6 +89,7 @@ public class Menu
      */
     public void printMenu()
     {
+        System.out.print("Total menu items " + parts.get(0).getTotalParts());
         System.out.print(menuString);
     }
 }

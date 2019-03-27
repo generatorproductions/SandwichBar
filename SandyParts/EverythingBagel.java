@@ -21,7 +21,7 @@ public class EverythingBagel extends Bagel
      */
     public int getCalories()
     {
-        return 290;
+        return 290 + super.getCalories();
     }
     
     /**

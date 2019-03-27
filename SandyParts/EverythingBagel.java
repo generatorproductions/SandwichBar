@@ -8,6 +8,11 @@ package SandyParts;
  */
 public class EverythingBagel extends Bagel
 {
+    public EverythingBagel()
+    {
+        super();
+    }
+    
      /**
      * @return: A string of the sound the food makes
      */
@@ -45,6 +50,6 @@ public class EverythingBagel extends Bagel
      */
     public String toString()
     {
-        return "Everything Bagel";
+        return ("Everything" + super.toString()).trim();
     }
 }

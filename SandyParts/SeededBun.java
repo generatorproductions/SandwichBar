@@ -21,7 +21,7 @@ public class SeededBun extends Bun
      */
     public int getCalories()
     {
-        return 120;
+        return 120+ super.getCalories();
     }
     
     /**
@@ -45,6 +45,6 @@ public class SeededBun extends Bun
      */
     public String toString()
     {
-        return "Seeded Bun";
+        return "Seeded" + super.toString();
     }
 }

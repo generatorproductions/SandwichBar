@@ -12,4 +12,10 @@ abstract public class Bagel extends Grain
     {
         super();
     }
+    
+    public String toString()
+    {
+        return super.toString() + "Bagel";
+    }
+    
 }

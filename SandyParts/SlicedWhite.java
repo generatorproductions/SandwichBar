@@ -26,7 +26,7 @@ public class SlicedWhite extends Sliced
      */
     public int getCalories()
     {
-        return 79;
+        return 79+ super.getCalories();
     }
     
     /**
@@ -50,6 +50,6 @@ public class SlicedWhite extends Sliced
      */
     public String toString()
     {
-        return "Sliced White Bread";
+        return "Sliced White" + super.toString();
     }
 }

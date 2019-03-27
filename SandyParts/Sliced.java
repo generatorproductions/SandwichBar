@@ -12,4 +12,9 @@ abstract public class Sliced extends Grain
     {
         super();
     }
+    
+    public String toString()
+    {
+        return super.toString() + "Bread";
+    }
 }

@@ -12,4 +12,9 @@ abstract public class Bun extends Grain
     {
         super();
     }
+    
+    public String toString()
+    {
+        return super.toString() + "Bun";
+    }
 }

@@ -21,7 +21,7 @@ public class PlainBagel extends Bagel
      */
     public int getCalories()
     {
-        return 280;
+        return 280+ super.getCalories();
     }
     
     /**
@@ -45,6 +45,6 @@ public class PlainBagel extends Bagel
      */
     public String toString()
     {
-        return "Plain Bagel";
+        return "Plain" + super.toString();
     }
 }

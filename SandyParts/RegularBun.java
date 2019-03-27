@@ -21,7 +21,7 @@ public class RegularBun extends Bun
      */
     public int getCalories()
     {
-        return 84;
+        return 84+ super.getCalories();
     }
     
     /**
@@ -45,7 +45,7 @@ public class RegularBun extends Bun
      */
     public String toString()
     {
-        return "Regular Bun";
+        return "Regular" + super.toString();
     }
     
 }

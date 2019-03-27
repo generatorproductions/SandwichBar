@@ -27,7 +27,7 @@ public class SlicedGrain extends Sliced
      */
     public int getCalories()
     {
-        return 69;
+        return 69+ super.getCalories();
     }
     
     /**
@@ -51,6 +51,6 @@ public class SlicedGrain extends Sliced
      */
     public String toString()
     {
-        return "Sliced Grain Bread";
+        return "Sliced Grain" + super.toString();
     }
 }

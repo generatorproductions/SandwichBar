@@ -45,10 +45,18 @@ abstract public class SandwichParts
     abstract public String getHardAbrev();
     
     /**
-     * @return: Sets original calorie count to 0
+     * @return: Gets original calorie count to 0
      */
     public int getCalories()
     {
-        return 0;
+        return 1;
+    }
+    
+    /**
+     * @return: A empty string because we, for some reason, need to call super classes' methods
+     */
+    public String toString()
+    {
+        return " ";
     }
 }
